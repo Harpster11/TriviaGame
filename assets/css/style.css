@@ -1,0 +1,28 @@
+body {
+    background-image: url("https://images8.alphacoders.com/405/405029.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+  }
+
+#block { 
+   
+    background-color: blue;
+    opacity: 0.7;
+    width: 70%;
+    height: auto;
+    margin: auto;
+    padding: 10px;
+
+}
+
+
+header {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-variant: small-caps;
+    color: goldenrod;
+    margin: auto;
+    text-align: center;
+    font-size: 80px;
+    opacity: 1;
+}
