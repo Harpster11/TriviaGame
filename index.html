@@ -13,23 +13,55 @@
             <div id="header">
             <header>Titanic Trivia</header>
             </div>
+                <div id="beforeSubmit" style=visibility:visible>
                         <h1 id="timeLeft">Time Remaining: </h1>
                         <h3>What Line Owned & Operated Titanic?</h3>
-                        <form>
+                        <form id="TriviaGame" name="TriviaGame">
                             <input type="radio" name="line" value="Royal Caribbean">Royal Caribbean Lines<br>
                             <input type="radio" name="line" value="Titanic Lines">Titanic Lines<br>
                             <input type="radio" name="line" value="Cunard">Cunard Line<br>
-                            <input type="radio" name="line" value="White Star Line">White Star Line
-                        </form>
-                    </ul>
+                            <input type="radio" name="line" value="White Star Line">White Star Line<br>
+                          <h3>What Port Did Titanic Sail From in April 1912?</h3>
+                            <input type="radio" name="port" value="London">London<br>
+                            <input type="radio" name="port" value="Dublin">Dublin<br>
+                            <input type="radio" name="port" value="Portsmouth">Portsmouth<br>
+                            <input type="radio" name="port" value="Southampton">Southampton<br>
+                            <input type="radio" name="port" value="Cardiff">Cardiff<br>
+                        <h3>Titanic Was Made Primarily Out Of:</h3>
+                            <input type="radio" name="material" value="Mild Steel">Mild Steel<br>
+                            <input type="radio" name="material" value="Aluminum">Aluminum<br>
+                            <input type="radio" name="material" value="Cast Iron">Cast Iron<br>
+                            <input type="radio" name="material" value="Wrought Iron">Wrought Iron<br>
+                            <input type="radio" name="material" value="Titanium">Titanium<br>
+                        <h3>Who Was Captain on Titanic's Maiden Voyage</h3>
+                            <input type="radio" name="captain" value="Captain Planet">Captain Planet<br>
+                            <input type="radio" name="captain" value="Chesley Sullenburger">Chesley Sullenburger<br>
+                            <input type="radio" name="captain" value="Icey McBurg">Icey McBurg<br>
+                            <input type="radio" name="captain" value="Edward John Smith">Edward John Smith<br>
+                            <input type="radio" name="captain" value="Leonardo DiCaprio">Leo DiCaprio<br>
+                        <h3>Who Has Been Widely Considered a Thankless Hero After Titanic Sank?</h3>
+                            <input type="radio" name="hero" value="Bruce Ismay">Bruce Ismay<br>
+                            <input type="radio" name="hero" value="Kate Winslet">Kate Winslet<br>
+                            <input type="radio" name="hero" value="The Unsinkable Molly Brown">The Unsinkable Molly Brown<br>
+                            <input type="radio" name="hero" value="John Harper">John Harper<br>
+                            <input type="radio" name="hero" value="Frodo Baggins">Frodo Baggins<br>
+                            <input type="button" name="submit" value="Submit Answers" id="submitButton" onclick="check()"></form>
+                        </div>
+                            <div id="afterSubmit" style=visibility:hidden>
+                                <h3 id="winLoss"></h3>
+                                <h4 id="wins"></h4>
+                                <h4 id="losses"></h4>
+                                <button value="Click to Try Again!" onclick=reset()>
+                                </div>
                 </div>
+               
         </div>
        
     </div>
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-    crossorigin="anonymous"></script>"
+    crossorigin="anonymous"></script>
     <script src="assets/javascript/app.js"></script>
 </body>
 </html>
