@@ -1,3 +1,15 @@
+ 
+var timeleft = 120;
+var downloadTimer = setInterval(function(){
+  document.getElementById("countdown").innerHTML = timeleft + " seconds remaining";
+  timeleft -= 1;
+  if(timeleft <= 0){
+    clearInterval(downloadTimer);
+    document.getElementById("countdown").innerHTML = "Times Up";
+    check();
+  }
+}, 1000);
+
 function check(){
     var q1 = document.TriviaGame.line.value;
     var q2 = document.TriviaGame.port.value;
@@ -41,10 +53,10 @@ function check(){
         incorrect++;
     }
 
-    document.getElementById("beforeSubmit").style.visibility = "hidden";
+    document.getElementById("beforeSubmit").innerHTML = "";
     document.getElementById("afterSubmit").style.visibility = "visible";
 
-    if (correct < incorrect) {
+    if (correct > incorrect) {
         document.getElementById("winLoss").innerHTML = "You Win!!!!";
     }
     else {
@@ -53,7 +65,7 @@ function check(){
 
     document.getElementById("wins").innerHTML = "You got " + correct
 +" correct!";
-    document.getElementById("losses").innerHTML = "You got " + incorrect +"incorrect!";
+    document.getElementById("losses").innerHTML = "You got " + incorrect +" incorrect!";
 
 }
 

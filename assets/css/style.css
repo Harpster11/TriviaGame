@@ -4,7 +4,11 @@ body {
     background-attachment: fixed;
     color: white;
   }
+#countdown {
+    font-weight: bold;
+    font-size: 18pt;
 
+}
 #block { 
    
     background-color: blue;
